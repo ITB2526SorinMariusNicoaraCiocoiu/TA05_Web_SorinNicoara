@@ -1,0 +1,192 @@
+/* --- ESTILS GENERALS I DE BASE --- */
+:root {
+    /* Variables de color */
+    --color-fons: #1a1a1a; /* Fons fosc, gairebé negre */
+    --color-text: #f5f5f5; /* Text clar */
+    --color-primari: #007bff; /* Blau intens per accents i botons */
+    --color-secundari: #555; /* Gris fosc per separacions */
+    --color-hover: #0056b3; /* Blau fosc per efectes hover */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Tipografia simple */
+}
+
+body {
+    background-color: var(--color-fons);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contingut */
+}
+
+/* --- CAPÇALERA (HEADER) I NAVEGACIÓ (NAV) --- */
+header {
+    background-color: #0d0d0d;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--color-secundari);
+}
+
+header h1 a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+/* Requisit: Enllaços/Botons */
+nav ul li a, .button {
+    text-decoration: none;
+    color: var(--color-text);
+    background-color: var(--color-primari);
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Transició suau */
+    display: inline-block;
+}
+
+/* Requisit: Botons que canvien d'aspecte en passar per sobre (:hover) */
+nav ul li a:hover, .button:hover {
+    background-color: var(--color-hover);
+    color: var(--color-text);
+}
+
+/* Estil secundari per botons (ex: enllaços de tornar, descarregar CV) */
+.button.secondary {
+    background-color: var(--color-secundari);
+}
+
+.button.secondary:hover {
+    background-color: #666;
+}
+
+/* --- SECCIONS, ARTICLE I ASIDE --- */
+section, aside, article {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #242424; /* Un gris fosc més suau que el fons */
+    border-radius: 8px;
+}
+
+h2, h3, h4 {
+    color: var(--color-primari);
+    margin-bottom: 15px;
+}
+
+/* Imatge de perfil a la secció Sobre Mi */
+#sobre-mier {
+    background-color: #0d0d0d;
+    color: var(--color-text);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid var(--color-secundari);
+}
+
+.xarxes-socials a {
+    color: var(--color-primari);
+    text-decoration: none;
+    margin: 0 10px;
+} img {
+    width: 200px; 
+    height: auto;
+    border-radius: 50%; /* Fa la imatge rodona */
+    margin-right: 20px;
+    float: left; /* Posa la imatge a l'esquerra del text */
+}
+
+/* Estil de les cards de projecte (Article) */
+.projecte-card {
+    text-aligner {
+    background-color: #0d0d0d;
+    color: var(--color-text);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid var(--color-secundari);
+}
+
+.xarxes-socials a {
+    color: var(--color-primari);
+    text-decoration: none;
+    margin: 0 10px;
+}: center;
+    margin-bottom: 20px;
+}
+
+.projecte-card img {
+    max-width: 100%; /* Imatge responsiva */
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+/* Estil per l'ASIDE */
+aside {
+    background-color: #333;
+}
+
+aside ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* --- FORMULARI (CONTACTE) --- */
+#contacte form div {
+    margin-bottom: 15px;
+}
+
+#contacte label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contacte input[type="text"],
+#contacte input[type="email"],
+#contacte textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-secundari);
+    border-radius: 4px;
+    background-color: #333;
+    color: var(--color-text);
+}
+
+#contacte button {
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+/* --- PEU DE PÀGINA (FOOTER) --- */
+footer {
+    background-color: #0d0d0d;
+    color: var(--color-text);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid var(--color-secundari);
+}
+
+.xarxes-socials a {
+    color: var(--color-primari);
+    text-decoration: none;
+    margin: 0 10px;
+}
